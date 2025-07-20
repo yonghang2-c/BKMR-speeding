@@ -48,8 +48,8 @@ Error: <img src="eq_images/error_qmc.png" width="200"/>, variance reduced via cl
   alt="Complexity BKMR"
   style="
     vertical-align: middle;      /* aligns the baseline of the image to the text middle */
-    margin-top: 0em;           /* pulls the top whitespace in */
-    margin-bottom: 0em;        /* pulls the bottom whitespace in */
+    margin-top: 0.1em;           /* pulls the top whitespace in */
+    margin-bottom: 0.3em;        /* pulls the bottom whitespace in */
     display: inline-block;       /* ensures the margins apply predictably */
   "
 /> cost.
