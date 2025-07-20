@@ -12,7 +12,7 @@ Exact Gaussian-process regression with covariance:
 
 Fitting the model:
 
-<img src="eq_images/full_model.png" width="200"/>
+<img src="eq_images/full_model.png" width="300"/>
 
 MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
 
@@ -20,28 +20,28 @@ MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
 
 Monte Carlo kernel approximation:
 
-<img src="eq_images/rff_map.png" width="200"/>
+<img src="eq_images/rff_map.png" width="300"/>
 
 Bayesian linear model in feature space:
 
-<img src="eq_images/rff_lin.png" width="200"/>
+<img src="eq_images/rff_lin.png" width="300"/>
 
-Cost: <img src="eq_images/complexity_rff.png" width="100"/>, error: <img src="eq_images/error_mc.png" width="100"/>.
+Cost: <img src="eq_images/complexity_rff.png" width="200"/>, error: <img src="eq_images/error_mc.png" width="200"/>.
 
 ### 3. MR-QMC-IFF
 
 Global Quasi-Monte Carlo features:
 
-<img src="eq_images/mr_global.png" width="200"/>
+<img src="eq_images/mr_global.png" width="300"/>
 
 Combined global and local features:
 
-<img src="eq_images/mr_combined.png" width="200"/>
+<img src="eq_images/mr_combined.png" width="300"/>
 
-Error: <img src="eq_images/error_qmc.png" width="100"/>, variance reduced via clustering, BKMR-level accuracy with fewer features.
+Error: <img src="eq_images/error_qmc.png" width="200"/>, variance reduced via clustering, BKMR-level accuracy with fewer features.
 
 ## Summary
 
-- **Full BKMR**: exact GP inference, <img src="eq_images/complexity_bkmr.png" width="100"/> cost.
-- **RFF-only**: MC kernel approximation, <img src="eq_images/complexity_rff.png" width="100"/> cost, <img src="eq_images/error_mc.png" width="100"/> error.
-- **MR-QMC-IFF**: QMC+local features, <img src="eq_images/error_qmc.png" width="100"/> error, scalable to large n and p.
+- **Full BKMR**: exact GP inference, <img src="eq_images/complexity_bkmr.png" width="200"/> cost.
+- **RFF-only**: MC kernel approximation, <img src="eq_images/complexity_rff.png" width="200"/> cost, <img src="eq_images/error_mc.png" width="200"/> error.
+- **MR-QMC-IFF**: QMC+local features, <img src="eq_images/error_qmc.png" width="200"/> error, scalable to large n and p.
