@@ -38,19 +38,15 @@ so that:
 
 <img src="eq_images/phi_rff_expect.png" width="400"/>
 
-Monte Carlo approximation of the Gaussian kernel via Bochner’s theorem:
-
-<img src="eq_images/rff_map.png" width="300"/>
-
-Bayesian linear model in feature space:
+Then, the y can be predicted by Bayesian linear model in feature space:
 
 <img src="eq_images/rff_lin.png" width="300"/>
 
-Cost: 
+With Cost: 
 
 <img src="eq_images/complexity_rff.png" width="200"/>
 
-Error: 
+and Error: 
 
 <img src="eq_images/error_mc.png" width="200"/>
 
