@@ -88,7 +88,9 @@ RFF-only: Monte Carlo kernel approximation, cost O(nD^2)
 
 MR-QMC-IFF: mixed Quasi-Monte Carlo + cluster-localized features,high accuracy with lower feature dimension—ideal for scaling GP-like models to large n and p. 
 
+
 ### Comparison with three methods
 
 
+<img src="code/posterior_predictive_density.png" width="400" align="center"/>
 
