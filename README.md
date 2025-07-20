@@ -12,13 +12,15 @@ Exact Gaussian-process regression with covariance:
 
 Fitting the model:
 
-<img src="eq_images/full_model.png" width="400"/>
+<img src="eq_images/full_model.png" width="300"/>
 
 MCMC via `kmbayes` yields full posterior draws of f, enabling direct inference on exposure interactions.
 
+### 2. RFF-only (Random Fourier Features)
+
 By Bochner’s theorem, any shift-invariant kernel can be expressed as:
 
-<img src="eq_images/bochner.png" width="400"/>
+<img src="eq_images/bochner.png" width="300"/>
 
 with the spectral density:
 
@@ -26,9 +28,7 @@ with the spectral density:
 
 Defining the random feature map $\phi_{\omega,b}(z)=\sqrt{2}\cos(\omega^\top z + b)$, we have the expectation:
 
-<img src="eq_images/expectation.png" width="400"/>
-
-### 2. RFF-only (Random Fourier Features)
+<img src="eq_images/expectation.png" width="300"/>
 
 Approximate via $D$ Monte Carlo samples:
 
