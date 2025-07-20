@@ -40,7 +40,7 @@ so that:
 
 Then, the y can be predicted by Bayesian linear model in feature space:
 
-<img src="eq_images/rff_lin.png" width="300" align="center"/>
+<img src="eq_images/rff_lin.png" width="400" align="center"/>
 
 With Cost: 
 
@@ -56,14 +56,14 @@ In this case, we considered both global and local features:
 
 Using a Sobol sequence, draw feature from Quasi-Monte Carlo:
 
-<img src="eq_images/mr_global.png" width="400" align="center"/>
+<img src="eq_images/mr_global.png" width="300" align="center"/>
 
 Local QMC: cluster Z into K groups by k-means; Within each cluster K, generate local D Sobol-based features. 
 
 
 Combined global and local features:
 
-<img src="eq_images/mr_combined.png" width="200" align="center"/>
+<img src="eq_images/mr_combined.png" width="400" align="center"/>
 
 With Error: 
 
