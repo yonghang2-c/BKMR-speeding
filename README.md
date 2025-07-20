@@ -89,8 +89,25 @@ RFF-only: Monte Carlo kernel approximation, cost O(nD^2)
 MR-QMC-IFF: mixed Quasi-Monte Carlo + cluster-localized features,high accuracy with lower feature dimension—ideal for scaling GP-like models to large n and p. 
 
 
-### Comparison with three methods
+### Comparison with three methods within simualted dataset
+
+Simulated dataset: 
+
+n = 2000, number of exposure (p) = 5， covirate = 3
+
+Assuming non-linear fucntion h <- function(Z) {
+  rowSums(sin(2*pi*Z)) + apply(Z, 1, prod)
+}
+
+#beta for covirate
+beta <- c(1.0, -1.0, 0.5)
+
+#Generate Y (outcome)
+
+y  <- h(z) + x %*% beta + rnorm(n, sd = 0.1)
 
 
-<img src="code/posterior_predictive_density.png" width="400" align="center"/>
+### posterior_predictive_density
+
+<img src="code/posterior_predictive_density.png" width="800" align="center"/>
 
