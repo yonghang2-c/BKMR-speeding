@@ -12,7 +12,7 @@ Exact Gaussian-process regression with covariance:
 
 Fitting the model:
 
-<img src="eq_images/full_model.png" width="300"/>
+<img src="eq_images/full_model.png" width="400"/>
 
 MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
 
