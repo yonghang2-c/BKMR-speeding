@@ -73,12 +73,18 @@ With Error:
 ### Why MR-QMC-IFF?
 
 1. Faster convergence: QMC features achieve deterministic approximation error O(D-1), up to log factors) versus Monte Carlo’s O(D-1.5).
+  
 2. Variance reduction: Localizing features by cluster tailors the approximation to each data subregion, further lowering variance per feature.
+   
 3. Efficiency: MR-QMC-IFF matches Full BKMR’s predictive accuracy with far fewer total features than RFF-only, cutting both memory and runtime without sacrificing accuracy.
 
-Summary
+### Summary
 
 Full BKMR: exact posterior inference of interactions O(n^3) cost
+
+
 RFF-only: Monte Carlo kernel approximation, cost O(nD^2)
+
+
 MR-QMC-IFF: mixed Quasi-Monte Carlo + cluster-localized features,high accuracy with lower feature dimension—ideal for scaling GP-like models to large n and p. 
 
