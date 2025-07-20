@@ -8,17 +8,37 @@ This script compares three kernel-based methods for modeling a continuous outcom
 
 Exact Gaussian-process regression with covariance:
 
-<img src="eq_images/kernel.png" width="200"/>
+<img src="eq_images/kernel.png" width="300"/>
 
 Fitting the model:
 
 <img src="eq_images/full_model.png" width="400"/>
 
-MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
+MCMC via `kmbayes` yields full posterior draws of f, enabling direct inference on exposure interactions.
+
+By Bochner’s theorem, any shift-invariant kernel can be expressed as:
+
+<img src="eq_images/bochner.png" width="400"/>
+
+with the spectral density:
+
+<img src="eq_images/p_omega.png" width="300"/>
+
+Defining the random feature map $\phi_{\omega,b}(z)=\sqrt{2}\cos(\omega^\top z + b)$, we have the expectation:
+
+<img src="eq_images/expectation.png" width="400"/>
 
 ### 2. RFF-only (Random Fourier Features)
 
-Monte Carlo kernel approximation:
+Approximate via $D$ Monte Carlo samples:
+
+<img src="eq_images/phi_rff.png" width="400"/>
+
+so that:
+
+<img src="eq_images/phi_rff_expect.png" width="400"/>
+
+Monte Carlo approximation of the Gaussian kernel via Bochner’s theorem:
 
 <img src="eq_images/rff_map.png" width="300"/>
 
