@@ -27,20 +27,16 @@ Bayesian linear model in feature space:
 <img src="eq_images/rff_lin.png" width="300"/>
 
 Cost: 
-<img src="eq_images/complexity_rff.png" width="200"/>, 
-error: 
-<img src="eq_images/error_mc.png" width="200"/>.
+<img src="eq_images/complexity_rff.png" width="200"/>
+Error: 
+<img src="eq_images/error_mc.png" width="200"/>
 
 ### 3. MR-QMC-IFF
 
 Global Quasi-Monte Carlo features:
-
 <img src="eq_images/mr_global.png" width="300"/>
-
 Combined global and local features:
-
 <img src="eq_images/mr_combined.png" width="300"/>
-
 Error: 
 <img src="eq_images/error_qmc.png" width="200"/>, 
 variance reduced via clustering, BKMR-level accuracy with fewer features.
@@ -57,4 +53,4 @@ variance reduced via clustering, BKMR-level accuracy with fewer features.
 - <img src="eq_images/error_mc.png" width="200"/>.
 - **MR-QMC-IFF**: QMC+local features:
 - Error: <img src="eq_images/error_qmc.png" width="200"/>
-  scalable to large n and p.
+scalable to large n and p.
