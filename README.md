@@ -8,11 +8,11 @@ This script compares three kernel-based methods for modeling a continuous outcom
 
 Exact Gaussian-process regression with covariance:
 
-![Gaussian Kernel](eq_images/kernel.png)
+![Gaussian Kernel](kernel.png)
 
 Fitting the model:
 
-![Full BKMR Model](eq_images/full_model.png)
+![Full BKMR Model](full_model.png)
 
 MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
 
@@ -20,11 +20,11 @@ MCMC via `kmbayes` yields full posterior draws of f for interaction inference.
 
 Monte Carlo kernel approximation:
 
-![RFF Map](eq_images/rff_map.png)
+![RFF Map](rff_map.png)
 
 Bayesian linear model in feature space:
 
-![RFF Linear Model](eq_images/rff_lin.png)
+![RFF Linear Model](rff_lin.png)
 
 Cost: O(nD²), error: O_p(D⁻¹ᐟ²).
 
@@ -32,11 +32,11 @@ Cost: O(nD²), error: O_p(D⁻¹ᐟ²).
 
 Global Quasi-Monte Carlo features:
 
-![MR Global](eq_images/mr_global.png)
+![MR Global](mr_global.png)
 
 Combined global and local features:
 
-![MR Combined](eq_images/mr_combined.png)
+![MR Combined](mr_combined.png)
 
 Error: O(D⁻¹), variance reduced via clustering, BKMR-level accuracy with fewer features.
 
