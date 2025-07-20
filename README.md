@@ -50,43 +50,35 @@ and Error:
 
 <img src="eq_images/error_mc.png" width="200"/>
 
-### 3. MR-QMC-IFF
+### 3. MR-QMC-IFF (Mixed-Resolution Quasi-Monte Carlo + Intra-Cluster Feature Fusion)
 
-Global Quasi-Monte Carlo features:
+In this case, we considered both global and local features: 
+
+Using a Sobol sequence, draw feature from Quasi-Monte Carlo:
 
 <img src="eq_images/mr_global.png" width="300"/>
+
+Local QMC: cluster Z into K groups by k-means; Within each cluster K, generate local D Sobol-based features. 
+
 
 Combined global and local features:
 
 <img src="eq_images/mr_combined.png" width="300"/>
 
-Error: 
+With Error: 
 
 <img src="eq_images/error_qmc.png" width="200"/>, 
 
-variance reduced via clustering, BKMR-level accuracy with fewer features.
 
-## Summary
+### Why MR-QMC-IFF?
 
-- **Full BKMR**: exact GP inference:
--
-- Cost:
--
-- <img src="eq_images/complexity_bkmr.png" width="200"/>.
--
-- **RFF-only**: MC kernel approximation:
--
-- Cost:
--
-- <img src="eq_images/complexity_rff.png" width="200"/>,
--
-- Error:
--
-- <img src="eq_images/error_mc.png" width="200"/>.
--
-- **MR-QMC-IFF**:
-- QMC+local features:
--
-- Error: <img src="eq_images/error_qmc.png" width="200"/>
+1. Faster convergence: QMC features achieve deterministic approximation error O(D-1), up to log factors) versus Monte Carlo’s O(D-1.5).
+2. Variance reduction: Localizing features by cluster tailors the approximation to each data subregion, further lowering variance per feature.
+3. Efficiency: MR-QMC-IFF matches Full BKMR’s predictive accuracy with far fewer total features than RFF-only, cutting both memory and runtime without sacrificing accuracy.
 
-scalable to large n and p.
+Summary
+
+Full BKMR: exact posterior inference of interactions O(n^3) cost
+RFF-only: Monte Carlo kernel approximation, cost O(nD^2)
+MR-QMC-IFF: mixed Quasi-Monte Carlo + cluster-localized features,high accuracy with lower feature dimension—ideal for scaling GP-like models to large n and p. 
+
