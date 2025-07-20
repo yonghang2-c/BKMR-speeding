@@ -26,7 +26,10 @@ Bayesian linear model in feature space:
 
 <img src="eq_images/rff_lin.png" width="300"/>
 
-Cost: <img src="eq_images/complexity_rff.png" width="200"/>, error: <img src="eq_images/error_mc.png" width="200"/>.
+Cost: 
+<img src="eq_images/complexity_rff.png" width="200"/>, 
+error: 
+<img src="eq_images/error_mc.png" width="200"/>.
 
 ### 3. MR-QMC-IFF
 
@@ -38,20 +41,20 @@ Combined global and local features:
 
 <img src="eq_images/mr_combined.png" width="300"/>
 
-Error: <img src="eq_images/error_qmc.png" width="200"/>, variance reduced via clustering, BKMR-level accuracy with fewer features.
+Error: 
+<img src="eq_images/error_qmc.png" width="200"/>, 
+variance reduced via clustering, BKMR-level accuracy with fewer features.
 
 ## Summary
 
-- **Full BKMR**: exact GP inference, <img
-  src="eq_images/complexity_bkmr.png"
-  width="200"
-  alt="Complexity BKMR"
-  style="
-    vertical-align: middle;      /* aligns the baseline of the image to the text middle */
-    margin-top: -0.1em;           /* pulls the top whitespace in */
-    margin-bottom: 0.1em;        /* pulls the bottom whitespace in */
-    display: inline-block;       /* ensures the margins apply predictably */
-  "
-/> cost.
-- **RFF-only**: MC kernel approximation, <img src="eq_images/complexity_rff.png" width="200"/> cost, <img src="eq_images/error_mc.png" width="200"/> error.
-- **MR-QMC-IFF**: QMC+local features, <img src="eq_images/error_qmc.png" width="200"/> error, scalable to large n and p.
+- **Full BKMR**: exact GP inference:
+- Cost:
+- <img src="eq_images/complexity_bkmr.png" width="200"/>.
+- **RFF-only**: MC kernel approximation:
+- Cost:
+- <img src="eq_images/complexity_rff.png" width="200"/>,
+- Error:
+- <img src="eq_images/error_mc.png" width="200"/>.
+- **MR-QMC-IFF**: QMC+local features:
+- Error: <img src="eq_images/error_qmc.png" width="200"/>
+  scalable to large n and p.
