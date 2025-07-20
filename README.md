@@ -12,7 +12,7 @@ Exact Gaussian-process regression with covariance:
 
 Fitting the model:
 
-<img src="eq_images/full_model.png" width="300" align="center"/>
+<img src="eq_images/full_model.png" width="400" align="center"/>
 
 MCMC via `kmbayes` yields full posterior draws of f, enabling direct inference on exposure interactions.
 
@@ -20,35 +20,35 @@ MCMC via `kmbayes` yields full posterior draws of f, enabling direct inference o
 
 By Bochner’s theorem, any shift-invariant kernel can be expressed as:
 
-<img src="eq_images/bochner.png" width="300"/>
+<img src="eq_images/bochner.png" width="400" align="center"/>
 
 with the spectral density:
 
-<img src="eq_images/p_omega.png" width="300"/>
+<img src="eq_images/p_omega.png" width="400" align="center"/>
 
 Defining the random feature map $\phi_{\omega,b}(z)=\sqrt{2}\cos(\omega^\top z + b)$, we have the expectation:
 
-<img src="eq_images/expectation.png" width="300"/>
+<img src="eq_images/expectation.png" width="400" align="center"/>
 
 Approximate via $D$ Monte Carlo samples:
 
-<img src="eq_images/phi_rff.png" width="400"/>
+<img src="eq_images/phi_rff.png" width="400" align="center"/>
 
 so that:
 
-<img src="eq_images/phi_rff_expect.png" width="400"/>
+<img src="eq_images/phi_rff_expect.png" width="400" align="center"/>
 
 Then, the y can be predicted by Bayesian linear model in feature space:
 
-<img src="eq_images/rff_lin.png" width="300"/>
+<img src="eq_images/rff_lin.png" width="300" align="center"/>
 
 With Cost: 
 
-<img src="eq_images/complexity_rff.png" width="200"/>
+<img src="eq_images/complexity_rff.png" width="200" align="center"/>
 
 and Error: 
 
-<img src="eq_images/error_mc.png" width="200"/>
+<img src="eq_images/error_mc.png" width="200" align="center"/>
 
 ### 3. MR-QMC-IFF (Mixed-Resolution Quasi-Monte Carlo + Intra-Cluster Feature Fusion)
 
@@ -56,18 +56,18 @@ In this case, we considered both global and local features:
 
 Using a Sobol sequence, draw feature from Quasi-Monte Carlo:
 
-<img src="eq_images/mr_global.png" width="300"/>
+<img src="eq_images/mr_global.png" width="400" align="center"/>
 
 Local QMC: cluster Z into K groups by k-means; Within each cluster K, generate local D Sobol-based features. 
 
 
 Combined global and local features:
 
-<img src="eq_images/mr_combined.png" width="300"/>
+<img src="eq_images/mr_combined.png" width="200" align="center"/>
 
 With Error: 
 
-<img src="eq_images/error_qmc.png" width="200"/>, 
+<img src="eq_images/error_qmc.png" width="200" align="center"/>, 
 
 
 ### Why MR-QMC-IFF?
