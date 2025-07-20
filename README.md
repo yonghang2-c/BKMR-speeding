@@ -8,7 +8,7 @@ This script compares three kernel-based methods for modeling a continuous outcom
 
 Exact Gaussian-process regression with covariance:
 
-![Gaussian Kernel](<img src="kernel.png" width="300"/>)
+<img src="kernel.png" alt="Gaussian Kernel" width="300" />
 
 Fitting the model:
 
