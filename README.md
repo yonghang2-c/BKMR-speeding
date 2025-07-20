@@ -42,6 +42,8 @@ Error: <img src="eq_images/error_qmc.png" width="200"/>, variance reduced via cl
 
 ## Summary
 
-- **Full BKMR**: exact GP inference, <img src="eq_images/complexity_bkmr.png" width="200"/> cost.
+- **Full BKMR**: exact GP inference, <span style="vertical-align: middle; margin-left: 1em;">
+  <img src="eq_images/complexity_bkmr.png" width="100" alt="Complexity BKMR"/>
+</span> cost.
 - **RFF-only**: MC kernel approximation, <img src="eq_images/complexity_rff.png" width="200"/> cost, <img src="eq_images/error_mc.png" width="200"/> error.
 - **MR-QMC-IFF**: QMC+local features, <img src="eq_images/error_qmc.png" width="200"/> error, scalable to large n and p.
