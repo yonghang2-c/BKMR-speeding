@@ -8,11 +8,11 @@ This script compares three kernel-based methods for modeling a continuous outcom
 
 Exact Gaussian-process regression with covariance:
 
-<img src="eq_images/kernel.png" width="300"/>
+<img src="eq_images/kernel.png" width="300" align="center"/>
 
 Fitting the model:
 
-<img src="eq_images/full_model.png" width="300"/>
+<img src="eq_images/full_model.png" width="300" align="center"/>
 
 MCMC via `kmbayes` yields full posterior draws of f, enabling direct inference on exposure interactions.
 
