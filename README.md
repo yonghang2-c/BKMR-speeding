@@ -72,7 +72,7 @@ With Error:
 
 ### Why MR-QMC-IFF?
 
-1. Faster convergence: QMC features achieve deterministic approximation error O(D-1), up to log factors) versus Monte Carlo’s O(D-1.5).
+1. Faster convergence: QMC features achieve deterministic approximation error O(D^-1), up to log factors) versus Monte Carlo’s O(D^-1.5).
   
 2. Variance reduction: Localizing features by cluster tailors the approximation to each data subregion, further lowering variance per feature.
    
